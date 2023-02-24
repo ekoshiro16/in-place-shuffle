@@ -1,4 +1,5 @@
-const deckOfCards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+// PROMPT:
+// Write a function that takes an array of strings (where each string represents the name of a card) and "shuffle", or randomize the order, of each card in the deck. Be sure that you write this as an in-place function (i.e. you do not create a new array in order to accomplish this task. You instead modify the original input array). 
 
 function inPlaceShuffle(deck) {
     // We'll assume that we will start by shuffling the "top" card (i.e. the card at the last index position) into a random position of my deck. 
@@ -35,5 +36,7 @@ function inPlaceShuffle(deck) {
     // Don't forget to return our newly shuffled deck of cards!
     return deck;
 };
+
+const deckOfCards = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
 console.log(inPlaceShuffle(deckOfCards))
